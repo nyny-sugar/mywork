@@ -10,7 +10,7 @@ a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  width: 100%;
 }
 li {
   list-style: none;
@@ -19,7 +19,7 @@ li {
 .wrapper {
   max-width: 960px;
   margin: 0 auto 130px auto;
-  padding: 0 78.156px;
+  padding: 0 4%;
   font-size: 0.9rem;
 }
 
@@ -175,4 +175,55 @@ li {
   background-color: #24292e;
   color: #fff;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  #works ul {
+    flex-direction: column;
+  }
+  #works li {
+    width: 100%;
+  }
+  #news dl {
+    flex-direction: column;
+  }
+  #news dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+  #contact dl {
+    flex-direction: column;
+  }
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
 }
